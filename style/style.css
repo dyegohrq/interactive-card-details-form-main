@@ -43,18 +43,21 @@ body, html {
 .bg-main {
     position: absolute;
     background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
     width: 297px;
     height: 100%;
 }
 
-.img-front {
+/* Card front */
+
+.bg-card-front {
     position: absolute;
     background-image: url(../images/bg-card-front.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 349px;
     height: 223px;
-    top: 129px;
+    top: 84px;
     left: 88px;
     border-radius: 10px;
 }
@@ -85,4 +88,25 @@ body, html {
     bottom: -5px;
     padding: 26px;
     font-size: 15px;
+}
+
+/* Card Back */
+
+.bg-card-back {
+    position: absolute;
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 349px;
+    height: 244px;
+    top: 342px;
+    left: 153px;
+}
+
+.cvc {
+    position: absolute;
+    right: 42px;
+    top: 82px;
+    color: var(--White);
+    letter-spacing: 2px;
 }
