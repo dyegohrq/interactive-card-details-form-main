@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style/style.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -17,13 +19,21 @@
 <body>
 
   <main class="main">
+    <div class="bg-main"></div>
     <section class="card">
       <div class="card-front">
-        <div class="bg-card-front"></div>
-        <p>0000 0000 0000 0000</p>
-        <span class="name">Jane Appleseed</span>
-        <span class="date">00/00</span>
+        <div class="img-front">
+          <img src="images/card-logo.svg" alt="" class="card-logo">
+          <div class="dados">
+            <p>0000 0000 0000 0000</p>
+            <div class="nd">
+              <span class="name">Jane Appleseed</span>
+              <span class="date">00/00</span>
+            </div>
+          </div>
       </div>
+        </div>
+        
       <div class="card-back">
         <div class="bg-card-back"></div>
         <span class="cvc">000</span>
@@ -41,28 +51,32 @@
       <div class="form-control">
         <tr>
           <td colspan="3">
-            
+            <label for="month">Exp. Date (MM/YY)</label>
+            <div class="form-control">
+              <input type="number" name="form-control" id="month" placeholder="MM">
+            </div>
+            <div class="form-control">
+              <input type="number" name="form-control" id="year" placeholder="YY">
+            </div>
           </td>
         </tr>
       </div>
-      Exp. Date (MM/YY)
-      MM
-      YY
-      CVC
-      e.g. 123
-     
-      
-      
-      Confirm
+      <div class="form-control">
+        <label for="">CVC</label>
+          <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+        </div>
+
+      <button>Confirm</button>
     </form>
   </main>
 
   <!-- Completed state start -->
 
-  <main class="thank-you-container">
-    Thank you!
-    We've added your card details
-    Continue
+  <main class="thank-you-container" style="display: none;">
+    <!-- Thank you message -->
+    <h1>Thank you!</h1>
+    <p>We've added your card details</p>
+    <button>Continue</button>
   </main>
   
   <div class="attribution">
