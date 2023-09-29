@@ -36,6 +36,7 @@
         
       <div class="card-back">
         <div class="bg-card-back">
+          <img src="images/bg-card-back.png" alt="">
           <span class="cvc">000</span>
         </div>
         
@@ -50,24 +51,21 @@
         <label for="CardNumber">Card Number</label>
           <input type="text" name="CardNumber" id="Card-number" class="card-form" placeholder="e.g. 1234 5678 9123 0000">
       </div>
-      <div class="form-control">
-        <tr>
-          <td colspan="3">
-            <label for="month">Exp. Date (MM/YY)</label>
-            <div class="form-control">
-              <input type="number" name="form-control" id="month" placeholder="MM">
-            </div>
-            <div class="form-control">
-              <input type="number" name="form-control" id="year" placeholder="YY">
-            </div>
-          </td>
-        </tr>
-      </div>
-      <div class="form-control">
-        <label for="">CVC</label>
-          <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
-        </div>
 
+      <div class="form-control">
+        <div class="exp">
+          <div class="date">
+            <label for="#">Exp.date (MM/YY)</label>
+            <input type="number" name="#" id="month" placeholder="MM">
+            <input type="number" name="#" id="year" placeholder="YY">
+          </div>
+
+          <div class="inp-cvc">
+            <label for="#">cvc</label>
+            <input type="number" name="#" id="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+      </div>
       <button>Confirm</button>
     </form>
   </main>
