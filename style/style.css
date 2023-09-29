@@ -44,6 +44,9 @@ body, html {
     position: absolute;
     background-image: url(../images/bg-main-desktop.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
     width: 297px;
     height: 100%;
 }
