@@ -47,7 +47,7 @@ body, html {
     background-size: cover;
     top: 0px;
     left: 0px;
-    width: 297px;
+    width: 30%;
     height: 100%;
 }
 
@@ -58,10 +58,10 @@ body, html {
     background-image: url(../images/bg-card-front.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 349px;
-    height: 223px;
-    top: 84px;
-    left: 88px;
+    width: 25%;
+    height: 25%;
+    top: 25%;
+    left: 15%;
     border-radius: 10px;
 }
 
@@ -76,11 +76,11 @@ body, html {
 .dados p {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    font-size: 25px;
+    justify-content: center;
     position: absolute;
-    bottom: 60px;
-    letter-spacing: 1px;
+    font-size: 1.7vw;
+    bottom: 29%;
+    letter-spacing: 2px;
 }
 
 .nd {
@@ -88,25 +88,25 @@ body, html {
     display: flex;
     position: absolute;
     justify-content: space-between;
-    bottom: -5px;
-    padding: 26px;
-    font-size: 15px;
+    bottom: 1%;
+    padding: 1vw 2vw;
+    font-size: 1rem;
 }
 
 /* Card Back */
 
 .bg-card-back img{
     position: absolute;
-    width: 349px;
-    height: 233px;
-    top: 342px;
-    left: 153px;
+    width: 25%;
+    height: 25%;
+    top: 53%;
+    left: 22%;
 }
 
 .cvc {
     position: absolute;
-    left: 23em;
-    bottom: 162px;
+    left: 41%;
+    top: 64%;
     color: var(--White);
     letter-spacing: 2px;
 }
@@ -114,9 +114,9 @@ body, html {
 /* Form */
 
 form {
-    width: 245px;
+    width: 24%;
     position: absolute;
-    right: 44px;
+    right: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -143,12 +143,16 @@ form {
     font-family: var(--font);
 }
 
+.date {
+    width: 58%;
+}
+
 .exp {
     display: flex;
 }
 
 .exp input {
-    width: 62px;
+    width: 48%;
 }
 
 .inp-cvc {
@@ -156,7 +160,7 @@ form {
 }
 
 .inp-cvc input{
-    width: 106px;
+    width: 100%;
 }
 
 /* Button */
@@ -172,118 +176,123 @@ button {
     cursor: pointer;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-   
-}
+@media screen and (min-width: 670px) and (max-width: 1200px) {
 
-@media screen and (max-width: 767px) {
-    .main {
-        max-width: 767px;
-        height: 100%;
+    /* Card front */
+
+    .bg-card-front {
+        width: 35%;
+        height: 33%;
+        top: 17%;       
     }
 
+    .dados p {
+        font-size: 2.4vw;
+    }
+    
+    .nd {
+        bottom: 4%;
+        padding: 1vw 2vw;
+        font-size: 0.8rem;
+    }
+
+    /* Card back */
+
+    .bg-card-back img{
+        width: 35%;
+        height: 35%;
+        top: 54%;
+    }
+    
+    .cvc {
+        left: 48%;
+        top: 69%;
+        font-size: 12pt;
+    }
+
+    /* Form */
+    
+    form {
+        width: 29%;
+        right: -8%;
+    }
+    
+    .date {
+        width: 100%;
+    }
+
+    .exp {
+        display: flex;
+        align-items: end;
+    }
+    
+    .exp input {
+        width: 46%;
+    }
+    
+    .inp-cvc {
+        align-content: center;
+        display: grid;
+    }
+    
+    .inp-cvc input{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 669px) {
     .bg-main {
+        position: absolute;
         background-image: url(../images/bg-main-mobile.png);
-        background-size: cover;
-        width: 100vw;
-        height: 260px;
+        width: 100%;
+        height: 35%;
     }
 
     /* Card front */
 
     .bg-card-front {
-        width: 292px;
-        height: 205px;
-        top: 154px;
-        left: 14px;
-        border-radius: 10px;
+        width: 81%;
+        height: 25%;
+        top: 17%;
+        left: 3%;
         z-index: 1;
     }
 
     .dados p {
-        font-size: 19px;
-        letter-spacing: 2px;
+        font-size: 5vw;
+        bottom: 29%;
+        letter-spacing: 3px;
     }
 
     .nd {
-        bottom: -2px;
-        padding: 22px;
-        font-size: 14px;
+        bottom: 1%;
+        padding: 2vw 5vw;
+        font-size: .8rem;
     }
 
-    /* Card - back */
+    /* Card Back */
 
     .bg-card-back img{
-        position: relative;
-        width: 295px;
-        height: 205px;
-        top: 37px;
-        left: 66px;
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        top: 53%;
+        left: 22%;
     }
 
     .cvc {
-        left: 291px;
-        top: 128px;
-        font-size: 15px;
+        position: absolute;
+        left: 41%;
+        top: 64%;
+        color: var(--White);
+        letter-spacing: 2px;
     }
+
 
     /* Form */
 
-    form {
-        width: 245px;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .form-control label {
-        display: block;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 7px;
-        color: var(--Very-dark-violet);
-    }
-
-    .form-control input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 5px;
-        border: 1px solid var(--Light-grayish-violet);
-    }
-
-    .form-control input::placeholder {
-        color: var(--Light-grayish-violet);
-        font-family: var(--font);
-    }
-
-    .exp {
-        display: flex;
-    }
-
-    .exp input {
-        width: 62px;
-    }
-
-    .inp-cvc {
-        margin-left: 10px;
-    }
-
-    .inp-cvc input{
-        width: 106px;
-    }
-
-    /* Button */
-
-    button {
-        width: 100%;
-        height: 37px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--Very-dark-violet);
-        color: var(--White);
-        font-family: var(--font);
-        cursor: pointer;
+    .form {
+        display: none;
     }
 }
