@@ -6,7 +6,7 @@
 /* ### Primary */
 
 /* - Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
-- Red (input errors): hsl(0, 100%, 66%) */
+ */
 
 /* ### Neutral */
 
@@ -17,6 +17,7 @@
     --Light-grayish-violet: hsl(270, 3%, 87%);
     --Dark-grayish-violet: hsl(279, 6%, 55%);
     --Very-dark-violet: hsl(278, 68%, 11%);
+    --Red: hsl(0, 100%, 66%);
 
     --font: 'Space Grotesk', sans-serif;
     /* - Weights: 500 */
@@ -141,6 +142,22 @@ form {
 .form-control input::placeholder {
     color: var(--Light-grayish-violet);
     font-family: var(--font);
+}
+
+small {
+    display: none;
+}
+
+.form-control.erro small {
+    display: block;
+    color: var(--Red);
+    font-size: 11px;
+    margin: 7px 0px 15px 0px;
+}
+
+.form-control.erro input {
+    margin-bottom: 0;
+    border-color: var(--Red);
 }
 
 .date {
