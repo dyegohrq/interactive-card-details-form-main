@@ -137,11 +137,18 @@ form {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid var(--Light-grayish-violet);
+    cursor: pointer;
 }
 
 .form-control input::placeholder {
     color: var(--Light-grayish-violet);
     font-family: var(--font);
+}
+
+.form-control input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px hsl(249, 99%, 64%), 0 0 0 1px hsl(278, 94%, 30%);
+    border-color: transparent;
 }
 
 .form-control input[type = number]::-webkit-inner-spin-button, input[type = number ]::-webkit-outer-spin-button {
@@ -153,16 +160,20 @@ small {
     display: none;
 }
 
-.form-control.erro small {
+.form-control.error small {
     display: block;
     color: var(--Red);
     font-size: 11px;
     margin: 7px 0px 15px 0px;
 }
 
-.form-control.erro input {
+.form-control.error input {
     margin-bottom: 0;
     border-color: var(--Red);
+}
+
+.form-control.success input {
+    border-color: green;
 }
 
 .date {
@@ -274,7 +285,7 @@ button {
     /* Card front */
 
     .bg-card-front {
-        width: 81%;
+        width: 74%;
         height: 25%;
         top: 18%;
         left: 3%;
